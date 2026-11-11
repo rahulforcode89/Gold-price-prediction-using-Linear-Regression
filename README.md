@@ -33,7 +33,7 @@ Gold-price-prediction-using-Linear-Regression/
 │   ├── correlation_heatmap.png          # Correlation heatmap across key economic indicators
 │   └── predicted_vs_actual.png          # Actual vs Predicted Gold Prices scatter plot
 ├── docs/
-│   ├── Team_Slides.pdf                  # 5-slide project presentation (PDF)
+│   ├── gold_price_data_ppt.pdf          # 5-slide project presentation (PDF)
 ├── requirements.txt                     # Pinned Python package dependencies
 └── README.md                            # Project documentation
 ```
@@ -111,7 +111,7 @@ Name: Adj Close, dtype: float64
 
 ## Links
 
-- **Presentation Slides (5 Slides):** [`docs/Team_Slides.pdf`](docs/Team_Slides.pdf)
+- **Presentation Slides (5 Slides):** [`docs/gold_price_data_ppt.pdf`](docs/gold_price_data_ppt.pdf)
 - **YouTube Video Demonstration (Max 5:00):** [Watch Project Demo on YouTube](https://youtu.be/YOUR_VIDEO_ID_HERE)
 
 ---
