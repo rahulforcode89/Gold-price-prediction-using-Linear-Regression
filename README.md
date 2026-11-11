@@ -144,7 +144,7 @@ python -m pip install --upgrade pip setuptools wheel
 
 ---
 
-## ▶️ How to Run the Project
+##  How to Run the Project
 
 ### Method 1: VS Code (Recommended)
 
