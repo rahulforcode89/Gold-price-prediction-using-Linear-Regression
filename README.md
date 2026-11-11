@@ -135,7 +135,7 @@ pip install ipykernel jupyter
 
 ---
 
-## ▶️ How to Run the Project
+##  How to Run the Project
 
 ### Method 1: VS Code (Recommended)
 
