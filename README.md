@@ -1,25 +1,55 @@
-Gold Price Prediction Using Multiple Linear Regression
+<div align="center">
 
-Gold Price (GLD) prediction using Multiple Linear Regression on the Gold Price dataset.
+#  Gold Price Prediction Using Multiple Linear Regression
 
-This project analyzes how economic indicators such as S&P 500 (SPX), Crude Oil (USO), Silver (SLV), and EUR/USD exchange rates influence gold prices using Python libraries including "pandas", "numpy", "matplotlib", "seaborn", and "scikit-learn".
+Predicting Gold Price (GLD) from economic indicators using Python and scikit-learn.
 
----
+![Python](https://img.shields.io/badge/Python-3.10%20|%203.11-3776AB?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikit-learn&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+![R²](https://img.shields.io/badge/R²-0.984-success)
 
-Team and Roles
-
-Member| Entry No.| Role| GitHub Handle
-Rahul Kumar| "2026AIB1071"| Documentation Lead| "@rahulforcode89" (https://github.com/rahulforcode89)
-Vineet Singh Lodhi| "2026EEB1425"| Execution Lead| "@VINEETSINGHLODHI" (https://github.com/VINEETSINGHLODHI)
-Member 3| "2026MCB1546"| PPT Lead| "@Manrojloveslemons" (https://github.com/Manrojloveslemons)
-Member 4| "2026ESB1474"| Video Lead| "@2026esb1474-ui" (https://github.com/2026esb1474-ui)
-
-All four members contributed code to this repository (see commit history).
+</div>
 
 ---
 
-Project Structure
+##  Overview
 
+This project analyzes how economic indicators such as **S&P 500 (SPX)**, **Crude Oil (USO)**, **Silver (SLV)**, and **EUR/USD exchange rates** influence gold prices. It uses `pandas`, `numpy`, `matplotlib`, `seaborn`, and `scikit-learn`.
+
+## 📑 Table of Contents
+
+- [Team and Roles](#-team-and-roles)
+- [Project Structure](#-project-structure)
+- [Requirements](#-requirements)
+- [Installation and Setup](#-installation-and-setup)
+- [How to Run](#-how-to-run-the-project)
+- [Project Workflow](#-project-workflow)
+- [Features Used](#-important-features-used)
+- [Expected Output](#-expected-output)
+- [Visualizations](#-generated-visualizations)
+- [Troubleshooting](#-troubleshooting)
+- [Project Resources](#-project-resources)
+- [AI-Use Disclosure](#-ai-use-disclosure)
+
+---
+
+##  Team and Roles
+
+| Member | Entry No. | Role | GitHub |
+|--------|-----------|------|--------|
+| Rahul Kumar | `2026AIB1071` | Documentation Lead | [@rahulforcode89](https://github.com/rahulforcode89) |
+| Vineet Singh Lodhi | `2026EEB1425` | Execution Lead | [@VINEETSINGHLODHI](https://github.com/VINEETSINGHLODHI) |
+| Member 3 | `2026MCB1546` | PPT Lead | [@Manrojloveslemons](https://github.com/Manrojloveslemons) |
+| Member 4 | `2026ESB1474` | Video Lead | [@2026esb1474-ui](https://github.com/2026esb1474-ui) |
+
+> All four members contributed code to this repository (see commit history).
+
+---
+
+##  Project Structure
+
+```text
 Gold-price-prediction-using-Linear-Regression/
 │
 ├── data/
@@ -40,125 +70,143 @@ Gold-price-prediction-using-Linear-Regression/
 │
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
-Requirements
+## Requirements
 
-- Python 3.10 or Python 3.11
-- VS Code (recommended) or Jupyter Notebook
-- Python extension for VS Code
-- Jupyter extension for VS Code
+| Requirement | Version / Details |
+|-------------|-------------------|
+| Python | 3.10 or 3.11 |
+| Code Editor | VS Code (recommended) |
+| Python Extension | Required for Python support |
+| Jupyter Extension | Required for notebook support |
+| Jupyter Kernel | `ipykernel` |
 
 ---
 
-Installation and Setup
+##  Installation and Setup
 
-1. Clone the repository
+### 1. Clone the Repository
 
-Open a terminal and execute:
-
+```bash
 git clone https://github.com/rahulforcode89/Gold-price-prediction-using-Linear-Regression.git
-
-Navigate to the project directory:
-
 cd Gold-price-prediction-using-Linear-Regression
+```
 
-2. Create a virtual environment
+### 2. Create a Virtual Environment
 
-It is recommended to create a virtual environment to keep project dependencies separate.
-
+```bash
 python -m venv .venv
+```
 
-Activate the environment:
+Activate it:
 
-Windows:
+**Windows (PowerShell)**
 
-.venv\Scripts\activate
+```powershell
+.venv\Scripts\Activate.ps1
+```
 
-macOS/Linux:
+**Windows (Command Prompt)**
 
+```bat
+.venv\Scripts\activate.bat
+```
+
+**macOS / Linux**
+
+```bash
 source .venv/bin/activate
+```
 
-3. Install dependencies
+### 3. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 Install Jupyter kernel support:
 
+```bash
 pip install ipykernel jupyter
+```
 
 ---
 
-How to Run the Project
+## ▶️ How to Run the Project
 
-Method 1: Using VS Code (Recommended)
+### Method 1: VS Code (Recommended)
 
-1. Open the cloned project folder in VS Code.
+1. Open the cloned repository folder in VS Code.
+2. Install the **Python** and **Jupyter** extensions if needed.
+3. Open `codes/program.ipynb`.
+4. Click **Select Kernel** in the top-right corner.
+5. Select **Python Environments**.
+6. Choose the interpreter from the project's `.venv` environment.
+7. Click **Run All**, or run individual cells with the play button.
 
-2. Make sure the Python and Jupyter extensions are installed.
+> [!IMPORTANT]
+> Open the repository's **root folder** in VS Code, not just the `codes` folder. This keeps the relative paths to the dataset and output directory working correctly.
 
-3. Navigate to:
-   
-   "codes/program.ipynb"
+### Method 2: Jupyter Notebook
 
-4. Open the notebook.
+With the virtual environment activated:
 
-5. Click Select Kernel in the top-right corner.
-
-6. Choose Python Environments.
-
-7. Select the project's ".venv" environment.
-
-8. Run the notebook cells individually using the play button or select Run All to execute the complete notebook.
-
-Important: Open the repository's root folder in VS Code rather than opening only the "codes" folder. This helps maintain the correct relative paths to the dataset and output directory.
-
-Method 2: Using Jupyter Notebook in a Browser
-
-After activating the virtual environment and installing the dependencies, execute:
-
+```bash
 jupyter notebook
+```
 
-1. Jupyter will open in your browser.
-2. Navigate to the "codes" folder.
-3. Open "program.ipynb".
-4. Execute the cells sequentially using Shift + Enter.
+1. Open the `codes` folder in the Jupyter interface.
+2. Select `program.ipynb`.
+3. Run cells sequentially with `Shift + Enter`.
 
-Method 3: Running the Python Script (Alternative)
+### Method 3: Python Script
 
-The project also includes a standalone Python script.
+From the repository root:
 
-From the repository's root directory, execute:
-
+```bash
 python codes/program.py
+```
 
 ---
 
-What Does the Project Do?
+## Project Workflow
 
-The notebook performs the following operations:
-
-1. Data Loading: Loads the Kaggle Gold Price dataset containing 1,718 rows and 81 columns.
-2. Data Cleaning: Removes duplicate entries and prepares the dataset for analysis.
-3. Exploratory Data Analysis (EDA): Generates visualizations to understand gold price distributions and relationships with economic indicators.
-4. Correlation Analysis: Examines relationships between gold prices and indicators such as:
-   - S&P 500 ("SP_close")
-   - Dow Jones ("DJ_close")
-   - Crude Oil ("USO_Close")
-   - Silver ("SF_Price")
-   - US Dollar Index ("USDI_Price")
-   - Gold Miners ETF ("GDX_Close")
-5. Data Preprocessing: Uses "ColumnTransformer", "SimpleImputer", and "OneHotEncoder" to handle missing values and categorical features.
-6. Model Training: Trains a Multiple Linear Regression model using an 80/20 train-test split with "random_state=42".
-7. Model Evaluation: Evaluates the model using MAE, MSE, RMSE, and R².
-8. Visualization: Generates actual-versus-predicted plots and correlation heatmaps.
+| Step | Operation | Description |
+|:----:|-----------|-------------|
+| 1 | Data Loading | Loads the Gold Price dataset (1,718 rows × 81 columns) |
+| 2 | Data Cleaning | Removes duplicate entries and prepares the dataset |
+| 3 | Exploratory Data Analysis | Analyzes distributions and relationships between indicators |
+| 4 | Correlation Analysis | Examines correlations between gold prices and other indicators |
+| 5 | Data Preprocessing | Handles missing values and categorical features using scikit-learn transformers |
+| 6 | Model Training | Trains a Multiple Linear Regression model (80/20 train-test split) |
+| 7 | Model Evaluation | Evaluates with MAE, MSE, RMSE, and R² |
+| 8 | Visualization | Generates actual-vs-predicted plots and correlation heatmaps |
 
 ---
 
-Expected Output
+##  Important Features Used
 
+| Feature | Column |
+|---------|--------|
+| S&P 500 | `SP_close` |
+| Dow Jones | `DJ_close` |
+| Crude Oil | `USO_Close` |
+| Silver | `SF_Price` |
+| US Dollar Index | `USDI_Price` |
+| Gold Miners ETF | `GDX_Close` |
+
+**Target variable:** Gold Price (`Adj Close`)
+
+---
+
+## Expected Output
+
+```text
 Dataset shape (rows, columns): (1718, 81)
+
 Training examples: 1374
 Testing examples: 344
 
@@ -168,66 +216,100 @@ MAE  : 1.747
 MSE  : 4.865
 RMSE : 2.206
 R²   : 0.984
+```
 
-Correlation with Adj Close:
-GDX_Close     0.98
-SF_Price      0.95
-USO_Close     0.64
-USB_Price    -0.44
-DJ_close     -0.59
-SP_close     -0.68
-USDI_Price   -0.72
+### Correlation with Gold Price
 
-Note: Actual output may vary slightly depending on the environment and library versions.
+| Feature | Correlation |
+|---------|:-----------:|
+| `GDX_Close` | 0.98 |
+| `SF_Price` | 0.95 |
+| `USO_Close` | 0.64 |
+| `USB_Price` | -0.44 |
+| `DJ_close` | -0.59 |
+| `SP_close` | -0.68 |
+| `USDI_Price` | -0.72 |
 
----
-
-Generated Outputs
-
-The project generates and saves the following visualizations in the "outputs/" directory:
-
-File| Description
-"gold_price_distribution.png"| Distribution of gold prices
-"feature_vs_gold_scatter.png"| Relationship between gold price and GDX_Close
-"correlation_heatmap.png"| Correlation between economic indicators
-"predicted_vs_actual.png"| Comparison of actual and predicted gold prices
+> [!NOTE]
+> Actual output may vary slightly depending on the environment and library versions.
 
 ---
 
-Troubleshooting
+##  Generated Visualizations
 
-1. Kernel not found in VS Code
+All plots are saved in the `outputs/` directory.
 
-- Activate the project's ".venv" environment.
-- Install "ipykernel" using "pip install ipykernel".
-- Restart VS Code and select the correct Python kernel.
+| File | Description |
+|------|-------------|
+| `gold_price_distribution.png` | Distribution of gold prices |
+| `feature_vs_gold_scatter.png` | Relationship between gold prices and `GDX_Close` |
+| `correlation_heatmap.png` | Correlation between economic indicators |
+| `predicted_vs_actual.png` | Comparison of actual and predicted gold prices |
 
-2. ModuleNotFoundError
+---
 
-Install the required packages:
+## Troubleshooting
 
+<details>
+<summary><b>Kernel not found in VS Code</b></summary>
+
+<br>
+
+```bash
+pip install ipykernel
+```
+
+Restart VS Code and select the `.venv` Python interpreter as the notebook kernel.
+
+</details>
+
+<details>
+<summary><b>ModuleNotFoundError</b></summary>
+
+<br>
+
+```bash
 pip install -r requirements.txt
+```
 
-3. Dataset or file not found
+</details>
 
-Make sure you have opened the repository's root directory in VS Code and that "gold_price_data.csv" exists inside the "data/" folder.
+<details>
+<summary><b>Dataset not found</b></summary>
 
-4. Plots are not appearing
+<br>
 
-Run the notebook cells sequentially and ensure that Matplotlib and Seaborn are installed.
+Make sure that:
+
+- The repository root folder is open in VS Code.
+- The dataset exists at `data/gold_price_data.csv`.
+- The notebook uses the correct relative dataset path.
+
+</details>
+
+<details>
+<summary><b>Plots not appearing</b></summary>
+
+<br>
+
+Run the notebook cells sequentially and make sure Matplotlib and Seaborn are installed.
+
+</details>
 
 ---
 
-Project Resources
+##  Project Resources
 
-- Presentation (PDF): ""docs/gold_price_data_ppt.pdf"" (docs/gold_price_data_ppt.pdf)
-- Jupyter Notebook: ""codes/program.ipynb"" (codes/program.ipynb)
-- Python Script: ""codes/program.py"" (codes/program.py)
-- Video Demonstration: "Watch Project Demo on YouTube" (https://youtu.be/YOUR_VIDEO_ID_HERE)
+| Resource | Link |
+|----------|------|
+| Presentation | [gold_price_data_ppt.pdf](docs/gold_price_data_ppt.pdf) |
+| Jupyter Notebook | [program.ipynb](codes/program.ipynb) |
+| Python Script | [program.py](codes/program.py) |
+| Project Demo | [Watch on YouTube](https://youtu.be/YOUR_VIDEO_ID_HERE) |
 
 ---
 
-AI-Use Disclosure
+## AI-Use Disclosure
 
 Gemini and Claude were used to assist in formatting the README documentation, structuring the project directory, and refining Matplotlib/Seaborn visualization snippets in the Python script and Jupyter Notebook.
 
