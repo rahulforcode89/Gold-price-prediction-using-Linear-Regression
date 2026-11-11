@@ -108,6 +108,13 @@ Activate it:
 ```powershell
 .venv\Scripts\Activate.ps1
 ```
+or try running below command before running above
+```powershell
+Create virtual environment 
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+type 
+Y
 
 **Windows (Command Prompt)**
 
