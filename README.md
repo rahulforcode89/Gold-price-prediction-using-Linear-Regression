@@ -137,7 +137,7 @@ Install Jupyter kernel support:
 ```bash
 pip install ipykernel jupyter
 ```
-or try
+if it doesn't work running below code before, then try
 ```bash
 python -m pip install --upgrade pip setuptools wheel
 ```
