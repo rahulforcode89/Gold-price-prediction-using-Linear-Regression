@@ -126,11 +126,20 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+or try
+```bash
+python -m pip install -r requirements.txt
+```
+
 
 Install Jupyter kernel support:
 
 ```bash
 pip install ipykernel jupyter
+```
+or try
+```bash
+python -m pip install --upgrade pip setuptools wheel
 ```
 
 ---
