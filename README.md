@@ -321,7 +321,7 @@ Run the notebook cells sequentially and make sure Matplotlib and Seaborn are ins
 | Presentation | [gold_price_data_ppt.pdf](docs/gold_price_data_ppt.pdf) |
 | Jupyter Notebook | [program.ipynb](codes/program.ipynb) |
 | Python Script | [program.py](codes/program.py) |
-| Project Demo | [Watch on YouTube](https://youtu.be/YOUR_VIDEO_ID_HERE) |
+| Project Video/Demo| [Watch on YouTube](https://youtu.be/IzbEHiLu9DA?si=2lpYuivinRILY1za)|
 
 ---
 
