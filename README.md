@@ -40,8 +40,9 @@ This project analyzes how economic indicators such as **S&P 500 (SPX)**, **Crude
 |--------|-----------|------|--------|
 | Rahul Kumar | `2026AIB1071` | Documentation Lead | [@rahulforcode89](https://github.com/rahulforcode89) |
 | Vineet Singh Lodhi | `2026EEB1425` | Execution Lead | [@VINEETSINGHLODHI](https://github.com/VINEETSINGHLODHI) |
-| Member 3 | `2026MCB1546` | PPT Lead | [@Manrojloveslemons](https://github.com/Manrojloveslemons) |
-| Member 4 | `2026ESB1474` | Video Lead | [@2026esb1474-ui](https://github.com/2026esb1474-ui) |
+| MANROJ SINGH | `2026MCB1546` | PPT Lead | [@Manrojloveslemons](https://github.com/Manrojloveslemons) |
+| BARMAVATH
+HARSHAVARDHAN NAIK | `2026ESB1474` | Video Lead | [@2026esb1474-ui](https://github.com/2026esb1474-ui) |
 
 > All four members contributed code to this repository (see commit history).
 
